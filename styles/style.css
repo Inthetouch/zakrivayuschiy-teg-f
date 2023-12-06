@@ -33,6 +33,7 @@
   background-color: #FFFFFF;
   padding: 100px 2px 25px;
   row-gap: 20px;
+  border: 2px solid #000;
 }
 
 .header__title {
@@ -68,4 +69,85 @@
   border: none;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-block-start: 102px;
+}
+
+.section {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.cards {
+  border: 2px solid #000;
+}
+
+.cards__title {
+  color: #000;
+  font-family: var(--font__text);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 8px 10px 8px;
+}
+
+.filter__first-card {
   
+}
+
+.cards__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-block-start: 25px;
+}
+
+.cards__content-text {
+  color: #000;
+  font-family: var(--font__text);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0 25px;
+}
+
+.cards__button {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: 0 25px 25px 0;
+}
+
+.card__icon-button {
+  background: none;
+  border: none;
+}
+
+.card__like-button {
+  display: flex;
+  width: 130px;
+  height: 38px;
+  padding: 9px 17px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid var(--themes-main-color, #000);
+  background: var(--themes-background, #FFF);
+}
+
+.button__text {
+  color: #000;
+  font-family: var(--font__elements);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
+}
