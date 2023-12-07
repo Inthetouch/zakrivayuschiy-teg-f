@@ -15,6 +15,10 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   padding-block-start: 102px;
@@ -32,6 +36,7 @@
   padding: 100px 2px 25px;
   row-gap: 20px;
   border: 2px solid var(--border__text-color);
+  width: clamp(371px, 100%, 696px);
 }
 
 .header__title {
@@ -85,8 +90,11 @@
 .main {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 50px;
   margin-block-start: 102px;
+  padding: 0 1px 0;
 }
 
 .section {
@@ -95,6 +103,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 50px;
+  width: clamp(375px, 100%, 700px);
 }
 
 .cards {
@@ -109,6 +118,11 @@
   font-weight: 700;
   line-height: normal;
   margin: 8px 10px 8px;
+}
+
+.cards__image {
+  width: 100%;
+  height: 100%;
 }
 
 .cards__content {
@@ -164,8 +178,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--background-color);
-  padding: 52px 34.5px 0px;
+  padding-block-start: 52px; 
   margin: 0 auto;
 }
 
@@ -180,9 +193,16 @@
 .footer__button {
   background: none;
   border: none;
-  min-width: 306px;
-  min-height: 80px;
+  width: 306px;
+  height: 80px;
   margin-block-end: 102px;
+}
+
+@media (width > 400px) {
+  .footer__button {
+    width: 335px;
+    height: 51px;
+  }
 }
 
 .button {
