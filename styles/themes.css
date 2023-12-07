@@ -23,3 +23,11 @@
     --border__text-color: var(--light__border-text-color, #000);
   }
 }
+
+@media (prefers-color-scheme:dark) {
+  :root {
+    --gradien-color: var(--light__gradient-color);
+    --background-color: var(--light__background-color);
+    --border__text-color: var(--light__border-text-color, #000);
+  }
+}

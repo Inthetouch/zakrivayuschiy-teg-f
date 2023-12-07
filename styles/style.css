@@ -127,18 +127,24 @@
 }
 
 .label {
-  color: var(--font__text);
   position: absolute;
-  font-size: 14px;
-  font-family: var(--font__elements);
   right: 25px;
   top: 60px;
-  text-transform: uppercase;
-  -webkit-text-stroke: 1px #ffffff; 
+  font-size: 14px;
+  font-family: var(--font__elements);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 1);
+  color: var(--border__text-color);
   opacity: 0.5;
   mix-blend-mode: hard-light;
 }
 
+@supports((-webkit-text-stroke: 1px rgba(255, 255, 255, 0.5)) or (text-stroke: 1px rgba(255, 255, 255, 0.5))) {
+  .label {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    text-stroke: 1px rgba(255, 255, 255, 0.5);
+    text-shadow: none;
+  }
+}
 
 .cards__content {
   display: flex;
