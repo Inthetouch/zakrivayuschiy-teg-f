@@ -213,6 +213,18 @@
   gap: 10px;
 }
 
+.card__like-button:focus {
+  outline: none;
+}
+
+.card__like-button:focus-visible {
+  box-shadow: 2px 2px 0 0 rgb(0 0 0);
+}
+
+.button {
+  
+}
+
 .button__text {
   color: var(--border__text-color);
   font-family: var(--font__elements);
@@ -240,8 +252,8 @@
 }
 
 .footer__button {
-  background: none;
-  border: none;
+  border: 2px solid var(--border__text-color, #000);
+  background: var(--background-color, #FFF);
   width: 306px;
   height: 80px;
   margin-block-end: 102px;
@@ -252,9 +264,4 @@
     width: 335px;
     height: 51px;
   }
-}
-
-.button {
-  border: 2px solid var(--border__text-color, #000);
-  background: var(--background-color, #FFF);
 }
