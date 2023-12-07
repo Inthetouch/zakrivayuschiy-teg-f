@@ -108,6 +108,7 @@
 
 .cards {
   border: 2px solid var(--border__text-color);
+  position: relative;
 }
 
 .cards__title {
@@ -124,6 +125,20 @@
   width: 100%;
   height: 100%;
 }
+
+.label {
+  color: var(--font__text);
+  position: absolute;
+  font-size: 14px;
+  font-family: var(--font__elements);
+  right: 25px;
+  top: 60px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #ffffff; 
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+}
+
 
 .cards__content {
   display: flex;
