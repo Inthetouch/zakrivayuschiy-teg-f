@@ -4,3 +4,22 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+  --gradien-color: var(--light__gradient-color);
+  --background-color: var(--light__background-color);
+  --border__text-color: var(--light__border-text-color);
+}
+
+:root.theme-dark {
+  --gradien-color: var(--dark__gradient-color);
+  --background-color: var(--dark__background-color);
+  --border__text-color: var(--dark__border-text-color);
+}
+
+@media (prefers-color-scheme:light) {
+  :root {
+    --gradien-color: var(--light__gradient-color);
+    --background-color: var(--light__background-color);
+    --border__text-color: var(--light__border-text-color);
+  }
+}
