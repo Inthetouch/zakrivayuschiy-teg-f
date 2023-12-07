@@ -85,6 +85,34 @@
   width: 14px;
   height: 14px;
   margin-inline-start: -15px;
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.theme-menu__button::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 1.5px;
+  margin-top: -6px;
+  background-color: var(--border__text-color);
+  transition: width 0.3s;
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button:focus-visible::after {
+  width: 100%;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  outline: none;
 }
 
 .main {
