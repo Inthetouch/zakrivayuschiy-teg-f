@@ -180,6 +180,34 @@
   height: 100%;
 }
 
+.filter__first-card {
+  filter: grayscale(100%);
+}
+
+.filter__second-card {
+  filter: blur(0.4rem);
+}
+
+.filter__third-card {
+  filter: hue-rotate(220deg);
+}
+
+.filter__four-card {
+  filter: saturate(250%);
+}
+
+.filter__five-card {
+  filter: sepia(95%);
+}
+
+.filter__six-card {
+  filter: invert(150%);
+}
+
+.filter__seven-card {
+  filter: contrast(300%);
+}
+
 .label {
   position: absolute;
   right: 25px;
