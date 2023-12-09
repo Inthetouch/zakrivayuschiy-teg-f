@@ -8,12 +8,18 @@
   --gradien-color: var(--light__gradient-color);
   --background-color: var(--light__background-color);
   --border__text-color: var(--light__border-text-color, #000);
+  --heart__sparks-color: var(--heart__sparks);
+  --heart__contour-color: var(--light__heart-contour);
+  --different__text-color: var(--light__different-color);
 }
 
 :root.theme-dark {
   --gradien-color: var(--dark__gradient-color);
   --background-color: var(--dark__background-color);
   --border__text-color: var(--dark__border-text-color, #00CC14);
+  --heart__sparks-color: var(--heart__sparks);
+  --heart__contour-color: var(--dark__heart-contour);
+  --different__text-color: var(--dark__border-text-color, #00CC14);
 }
 
 @media (prefers-color-scheme:light) {
@@ -21,6 +27,9 @@
     --gradien-color: var(--light__gradient-color);
     --background-color: var(--light__background-color);
     --border__text-color: var(--light__border-text-color, #000);
+    --heart__sparks-color: var(--heart__sparks);
+    --heart__contour-color: var(--light__heart-contour);
+    --different__text-color: var(--light__different-color);
   }
 }
 
@@ -29,5 +38,8 @@
     --gradien-color: var(--light__gradient-color);
     --background-color: var(--light__background-color);
     --border__text-color: var(--light__border-text-color, #000);
+    --heart__sparks-color: var(--heart__sparks);
+    --heart__contour-color: var(--dark__heart-contour);
+    --different__text-color: var(--dark__border-text-color, #00CC14);
   }
 }
