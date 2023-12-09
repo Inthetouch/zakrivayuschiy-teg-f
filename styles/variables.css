@@ -15,6 +15,7 @@
   --light__border-text-color: #000;
   --light__heart-contour: #000;
   --light__different-color: #FFF;
+  --light__heart-color: #000;
   /* Темная тема */
   --dark__gradient-color:
       repeating-linear-gradient(to right, #000, transparent 2px, transparent 4px),
@@ -23,4 +24,6 @@
   --dark__background-color: #000;
   --dark__border-text-color: #00CC14;
   --dark__heart-contour: #00CC14;
+  --dark__heart-color: #00CC14;
+  
 }

@@ -11,6 +11,7 @@
   --heart__sparks-color: var(--heart__sparks);
   --heart__contour-color: var(--light__heart-contour);
   --different__text-color: var(--light__different-color);
+  --heart__main-color: var(--light__heart-color);
 }
 
 :root.theme-dark {
@@ -20,6 +21,7 @@
   --heart__sparks-color: var(--heart__sparks);
   --heart__contour-color: var(--dark__heart-contour);
   --different__text-color: var(--dark__border-text-color, #00CC14);
+  --heart__hover-color: var(--dark__heart-color);
 }
 
 @media (prefers-color-scheme:light) {
@@ -30,6 +32,7 @@
     --heart__sparks-color: var(--heart__sparks);
     --heart__contour-color: var(--light__heart-contour);
     --different__text-color: var(--light__different-color);
+    --heart__hover-color: var(--light__heart-color);
   }
 }
 
@@ -41,5 +44,6 @@
     --heart__sparks-color: var(--heart__sparks);
     --heart__contour-color: var(--dark__heart-contour);
     --different__text-color: var(--dark__border-text-color, #00CC14);
+    --heart__main-color: var(--dark__heart-color);
   }
 }

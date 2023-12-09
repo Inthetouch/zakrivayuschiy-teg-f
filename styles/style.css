@@ -214,6 +214,10 @@
   border: 2px solid var(--border__text-color);
 }
 
+.sparks {
+  opacity: 0;
+}
+
 .card__like-button {
   display: flex;
   width: 130px;
@@ -231,10 +235,6 @@
 
 .card__like-button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--border__text-color);
-}
-
-.sparks {
-  opacity: 0;
 }
 
 .button {
