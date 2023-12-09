@@ -483,11 +483,28 @@
           viewBox="0 0 28 28">
           <use href="./svg/floppy.svg#floppy">
         </svg> 
-      <span class="button__text">Сохранить на память</span>
-    </button>
+        <span class="button__text">Сохранить на память</span>
+      </button>
     </footer>
-    <dialog class="footer__window">
-        
+    <dialog class="footer__window" id="dialog-id">
+      <div class="footer_dialog">
+        <svg 
+            class="dialog__image footer__image"
+            height="28" 
+            width="28" 
+            fill="currentColor" 
+            viewBox="0 0 28 28">
+            <use href="./svg/floppy.svg#floppy">
+        </svg>
+        <span class="dialog__text">
+          Вставьте дискету, чтобы продолжить
+        </span>
+      </div>
+      <form method="dialog" class="button__dialog">
+        <button type="submit" class="button__text-dialog card__like-button button">
+          <span class="button__text">OK</span>
+        </button>  
+      </form>
     </dialog>
     <script src="./scripts/like.js"></script>
   </body>
