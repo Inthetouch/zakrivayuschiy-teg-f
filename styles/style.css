@@ -22,7 +22,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   padding-block-start: 102px;
-  background: var(--gradien-color, #d3d3d3);
+  background: var(--gradien-color);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -100,6 +100,7 @@
   border: none;
   cursor: pointer;
   position: relative;
+  outline: none;
 }
 
 .theme-menu__button:disabled {
@@ -144,7 +145,6 @@
 
 .theme-menu__button:hover {
   opacity: 0.6;
-  outline: none;
 }
 
 .main {
@@ -174,7 +174,7 @@
 .cards__title {
   color: var(--border__text-color);
   font-family: var(--font__text);
-  font-variation-settings: 'wght' 700;
+  font-variation-settings: 'wght' var(--font__weight-cards-title);
   font-size: 18px;
   line-height: normal;
   margin: 2px 9px 5px;
@@ -253,7 +253,7 @@
   color: var(--border__text-color);
   font-family: var(--font__text);
   font-size: 18px;
-  font-variation-settings: 'wght' 400;
+  font-variation-settings: 'wght' var(--font__weight-cards-text);
   line-height: 21px;
   margin: 0 25px;
 }
@@ -299,6 +299,7 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  transition: box-shadow 0.3s ease;
 }
 
 .button:focus {

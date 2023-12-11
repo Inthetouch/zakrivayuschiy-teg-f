@@ -7,7 +7,6 @@
   --font__weight-cards-title: 700;
   --heart__sparks: red;
   /* Светлая тема */
-  /* Переменные перезаписываются в файле themes.css */
   --light__gradient-color:
       repeating-linear-gradient(to right, #d3d3d3, transparent 2px, transparent 4px),
       repeating-linear-gradient(to bottom, #d3d3d3, transparent 2px, transparent 4px),

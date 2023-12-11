@@ -13,16 +13,6 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-
-/* Добрый день. Не исправил значение linear так как в задании написано:
- "Все анимации на ховере производятся в линейное время, а вот с длительностью и задержкой нужно разбираться отдельно." 
- "Чтобы добиться такого эффекта при зажатии, вам нужно прописать абсолютно такие же настройки transition, 
- как и для эффекта по наведению, но поменять цвет на красный.
- "Перекрашивать сердцевину и основное тело вы уже умеете. Абсолютно те же самые параметры, что и при состоянии active."
- 
- То есть если я правильно понял в задании написано что анимации производятся в линейное время.
- */
-
 .contour {
   transition: fill 0.1s linear;
   fill: var(--heart__contour-color);
@@ -39,7 +29,7 @@
 }
 
 .core {
-  transition: fill 0.3s linear;
+  transition: fill 0.3s 0.3s linear;
   fill: var(--background-color);
 }
 
@@ -50,7 +40,7 @@
 
 .like-icon:active .main-body{
   fill:var(--heart__sparks-color);
-  transition: fill 0.5s linear;
+  transition: fill 0.3s 0.5s linear;
 }
 
 
@@ -62,7 +52,7 @@
 
 .like-icon.is-liked .main-body {
   fill:var(--heart__sparks-color);
-  transition: fill 0.5s linear;
+  transition: fill 0.3s 0.5s linear;
 }
 
 .like-icon.is-liked .core {
@@ -71,7 +61,7 @@
 }
 
 .like-icon.is-liked .contour {
-  transition: fill 0.06s linear;
+  transition: fill 0.3s 0.06s linear;
   fill: var(--heart__sparks-color);
 }
 
@@ -95,11 +85,7 @@
 
 @keyframes arrow {
   from {
-    transform: translate(-4px);
-  }
-
-  50% {
-    transform: translate(0);
+    transform: translate(0px);
   }
 
   to {
