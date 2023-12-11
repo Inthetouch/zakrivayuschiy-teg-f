@@ -279,10 +279,11 @@
   cursor: pointer;
   border: none;
   transition: border 0.3s ease;
-  height: 38px;
+  height: 34px;
   margin-inline-end: 5px;
   width: 38px;
   padding: 0;
+  margin-block-start: 2px;
 }
 
 .card__icon-button:focus {
@@ -291,7 +292,7 @@
 }
 
 .card__icon-button:focus-visible {
-  border: 2px solid var(--border__text-color);
+  outline: 2px solid var(--border__text-color);
 }
 
 .sparks {
