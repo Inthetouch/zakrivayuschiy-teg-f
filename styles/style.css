@@ -234,10 +234,10 @@
   mix-blend-mode: hard-light;
 }
 
-@supports((-webkit-text-stroke: 1px #FFFFFF) or (text-stroke: 1px #FFFFFF)) {
+@supports((-webkit-text-stroke: 1px var(--different__text-color)) or (text-stroke: 1px var(--different__text-color))) {
   .label {
-    -webkit-text-stroke: 1px #FFFFFF;
-    text-stroke: 1px #FFFFFF;
+    -webkit-text-stroke: 1px var(--different__text-color);
+    text-stroke: 1px var(--different__text-color);
     text-shadow: none;
   }
 }
