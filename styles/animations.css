@@ -24,7 +24,7 @@
 }
 
 .like-icon:hover .main-body {
-  fill:var(--heart__hover-color);
+  fill:var(--heart__contour-color);
   transition: fill 0.5s linear;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .like-icon:hover .core {
-  fill:var(--heart__hover-color);
+  fill:var(--heart__contour-color);
   transition: fill 0.3s linear;
 }
 
