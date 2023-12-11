@@ -242,6 +242,13 @@
   }
 }
 
+@media (width < 500px) {
+  .label {
+    top: 74px;
+    right: 11px;
+  }
+}
+
 .cards__content {
   display: flex;
   flex-direction: column;
@@ -265,11 +272,17 @@
 }
 
 .card__icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: none;
   cursor: pointer;
   border: none;
   transition: border 0.3s ease;
   height: 38px;
+  margin-inline-end: 5px;
+  width: 38px;
+  padding: 0;
 }
 
 .card__icon-button:focus {
@@ -299,6 +312,12 @@
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
+}
+
+@media (width < 500px) {
+  .button {
+    display: block;
+  }
 }
 
 .button:focus {
@@ -436,4 +455,5 @@
 .button__text-dialog {
   width: 100%;
   margin: 0 16px 14px;
+  text-transform: uppercase;
 }
