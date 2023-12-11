@@ -24,19 +24,7 @@
   --heart__hover-color: var(--dark__heart-color);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --gradien-color: var(--light__gradient-color, #000);
-    --background-color: var(--light__background-color);
-    --border__text-color: var(--light__border-text-color, #000);
-    --heart__sparks-color: var(--heart__sparks);
-    --heart__contour-color: var(--light__heart-contour);
-    --different__text-color: var(--light__different-color);
-    --heart__hover-color: var(--light__heart-color);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme:dark) {
   :root {
     --gradien-color: var(--light__gradient-color);
     --background-color: var(--light__background-color);
