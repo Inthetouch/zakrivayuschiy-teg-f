@@ -267,7 +267,7 @@
 .card__icon-button {
   background: none;
   cursor: pointer;
-  border: 2px solid transparent;
+  border: none;
   transition: border 0.3s ease;
   height: 37px;
   margin-block-start: 1px;
