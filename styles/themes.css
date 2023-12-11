@@ -5,33 +5,33 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-light {
-  --gradien-color: var(--light__gradient-color, #d3d3d3);
-  --background-color: var(--light__background-color);
-  --border__text-color: var(--light__border-text-color, #000);
+  --gradien-color: var(--white__gradient-color, #d3d3d3);
+  --background-color: var(--white-color, #FFF);
+  --border__text-color: var(--dark-color, #000);
   --heart__sparks-color: var(--heart__sparks);
-  --heart__contour-color: var(--light__heart-contour);
-  --different__text-color: var(--light__different-color);
-  --heart__main-color: var(--light__heart-color);
+  --heart__contour-color: var(--dark-color, #000);
+  --different__text-color: var(--white-color, #FFF);
+  --heart__main-color: var(--dark-color, #000);
 }
 
 :root.theme-dark {
-  --gradien-color: var(--dark__gradient-color, );
-  --background-color: var(--dark__background-color);
-  --border__text-color: var(--dark__border-text-color, #00CC14);
+  --gradien-color: var(--dark__gradient-color, #000);
+  --background-color: var(--dark-color, #000);
+  --border__text-color: var(--green-color, #00CC14);
   --heart__sparks-color: var(--heart__sparks);
-  --heart__contour-color: var(--dark__heart-contour);
-  --different__text-color: var(--dark__border-text-color, #00CC14);
-  --heart__hover-color: var(--dark__heart-color);
+  --heart__contour-color: var(--green-color, #00CC14);
+  --different__text-color: var(--green-color, #00CC14);
+  --heart__hover-color: var(--green-color, #00CC14);
 }
 
 @media (prefers-color-scheme:dark) {
   :root {
-    --gradien-color: var(--dark__gradient-color, );
-    --background-color: var(--dark__background-color);
-    --border__text-color: var(--dark__border-text-color, #00CC14);
+    --gradien-color: var(--dark__gradient-color, #000);
+    --background-color: var(--dark-color, #000);
+    --border__text-color: var(--green-color, #00CC14);
     --heart__sparks-color: var(--heart__sparks);
-    --heart__contour-color: var(--dark__heart-contour);
-    --different__text-color: var(--dark__border-text-color, #00CC14);
-    --heart__hover-color: var(--dark__heart-color);
+    --heart__contour-color: var(--green-color, #00CC14);
+    --different__text-color: var(--green-color, #00CC14);
+    --heart__hover-color: var(--green-color, #00CC14);
   }
 }
