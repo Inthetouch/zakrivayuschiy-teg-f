@@ -8,8 +8,8 @@
   --heart__sparks: red;
   /* Светлая тема */
   --light__gradient-color:
-      repeating-linear-gradient(to right, #d3d3d3, transparent 2px, transparent 4px),
-      repeating-linear-gradient(to bottom, #d3d3d3, transparent 2px, transparent 4px),
+      repeating-linear-gradient(to right, #d3d3d3, transparent 2px, transparent 2px),
+      repeating-linear-gradient(to bottom, #d3d3d3, transparent 2px, transparent 2px),
       linear-gradient(#E7E7E7 0.01%, #1a1a1a 100%);
   --light__background-color: #FFF;
   --light__border-text-color: #000;
@@ -18,8 +18,8 @@
   --light__heart-color: #000;
   /* Темная тема */
   --dark__gradient-color:
-      repeating-linear-gradient(to right, #000, transparent 2px, transparent 4px),
-      repeating-linear-gradient(to bottom, #000, transparent 2px, transparent 4px),
+      repeating-linear-gradient(to right, #000, transparent 2px, transparent 2px),
+      repeating-linear-gradient(to bottom, #000, transparent 2px, transparent 2px),
       linear-gradient(#007F0C 0.01%, #004306 100%);
   --dark__background-color: #000;
   --dark__border-text-color: #00CC14;
