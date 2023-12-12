@@ -35,3 +35,15 @@
     --heart__hover-color: var(--green-color, #00CC14);
   }
 }
+
+@media (prefers-color-scheme:light) {
+  :root {
+    --gradien-color: var(--white__gradient-color, #d3d3d3);
+    --background-color: var(--white-color, #FFF);
+    --border__text-color: var(--dark-color, #000);
+    --heart__sparks-color: var(--heart__sparks);
+    --heart__contour-color: var(--dark-color, #000);
+    --different__text-color: var(--white-color, #FFF);
+    --heart__main-color: var(--dark-color, #000);
+  }
+}
